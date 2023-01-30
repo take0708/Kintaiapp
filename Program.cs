@@ -1,8 +1,13 @@
+using Kintaiapp.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-
+if (builder.Environment.IsDevelopment())
+builder.Services.AddDbContext<KintaiappContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("KintaiappContext") ?? throw new InvalidOperationException("Connection string 'KintaiAppContext' not found.")));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

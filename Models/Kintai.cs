@@ -1,9 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
-
 namespace Kintaiapp.Models;
 
-public class Kintai
+public class Kintaiapp
 {
     public int Id { get; set; }
     public string? status { get; set; }

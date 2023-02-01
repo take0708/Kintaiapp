@@ -3,17 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Kintaiapp;
 using Kintaiapp.Models;
 
 namespace Kintaiapp.Data
 {
-    public class KintaiappContext : DbContext
+    public class KintaiContext : DbContext
     {
-        public KintaiappContext (DbContextOptions<KintaiappContext> options)
+        public KintaiContext (DbContextOptions<KintaiContext> options)
             : base(options)
         {
         }
 
-        public DbSet<Kintaiapp.Models.Kintai> Kintai { get; set; } = default!;
+        public DbSet<Kintaiapp.Models.Kintaiapp> Kintai { get; set; } = default!;
     }
 }

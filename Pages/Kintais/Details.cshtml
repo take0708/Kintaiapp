@@ -1,0 +1,49 @@
+@page
+@model Kintaiapp.Pages.Kintais.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Kintai</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Kintai.status)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Kintai.status)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Kintai.Start)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Kintai.Start)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Kintai.End)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Kintai.End)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Kintai.Rest)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Kintai.Rest)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Kintai.WorkTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Kintai.WorkTime)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Kintai?.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

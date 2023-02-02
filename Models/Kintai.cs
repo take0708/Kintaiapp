@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 namespace Kintaiapp.Models;
 
-public class Kintaiapp
+public class Kintai
 {
     public int Id { get; set; }
     public string? status { get; set; }

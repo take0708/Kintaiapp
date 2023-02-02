@@ -1,0 +1,54 @@
+@page
+@model Kintaiapp.Pages.Kintais.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Kintai</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Kintai.status" class="control-label"></label>
+                <input asp-for="Kintai.status" class="form-control" />
+                <span asp-validation-for="Kintai.status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Kintai.Start" class="control-label"></label>
+                <input asp-for="Kintai.Start" class="form-control" />
+                <span asp-validation-for="Kintai.Start" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Kintai.End" class="control-label"></label>
+                <input asp-for="Kintai.End" class="form-control" />
+                <span asp-validation-for="Kintai.End" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Kintai.Rest" class="control-label"></label>
+                <input asp-for="Kintai.Rest" class="form-control" />
+                <span asp-validation-for="Kintai.Rest" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Kintai.WorkTime" class="control-label"></label>
+                <input asp-for="Kintai.WorkTime" class="form-control" />
+                <span asp-validation-for="Kintai.WorkTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

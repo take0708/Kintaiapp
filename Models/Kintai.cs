@@ -9,5 +9,5 @@ public class Kintai
     public DateTime Start { get; set; }
     public DateTime End { get; set; }
     public string? Rest { get; set; }
-    public DateTime WorkTime { get; set; }
+    public string? WorkTime { get; set; }
 }

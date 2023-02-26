@@ -9,5 +9,15 @@ public class Kintai
     public DateTime Start { get; set; }
     public DateTime End { get; set; }
     public string? Rest { get; set; }
-    public string? WorkTime { get; set; }
+    private string? workTime;
+
+    public string? WorkTime 
+    {
+        get { return workTime; }
+        set 
+        { 
+            TimeSpan ts = (End - Start) - TimeSpan.Parse(Rest);
+            workTime = ts.ToString(@"hh\:mm");
+        }
+    }
 }

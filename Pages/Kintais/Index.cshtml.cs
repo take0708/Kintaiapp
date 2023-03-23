@@ -25,7 +25,7 @@ namespace Kintaiapp.Pages.Kintais
         {
             if (_context.Kintai != null)
             {
-                Kintai = await _context.Kintai.ToListAsync();
+                Kintai = await _context.Kintai.OrderBy(i => i.Start).ToListAsync();
             }
         }
     }

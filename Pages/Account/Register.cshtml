@@ -1,0 +1,32 @@
+@page
+@model Kintaiapp.Models.RegisterModel
+
+<h2>Register</h2>
+
+@if (!ModelState.IsValid)
+{
+    <div class="alert alert-danger" role="alert">
+        @foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
+        {
+            <span>@error.ErrorMessage</span><br/>
+        }
+    </div>
+}
+
+<form method="post">
+    <div class="form-group">
+        <label for="inputEmail">Email address</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="Enter email" name="Email" required>
+    </div>
+    <div class="form-group">
+        <label for="inputPassword">Password</label>
+        <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="Password" required>
+    </div>
+    <div class="form-group">
+        <label for="inputConfirmPassword">Confirm password</label>
+        <input type="password" class="form-control" id="inputConfirmPassword" placeholder="Confirm password" name="ConfirmPassword" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>
+
+<p>Already have an account? <a asp-page="./Login">Login</a></p>

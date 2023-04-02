@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/user/Desktop/個人開発関係/C#業務アプリ作成関係/Kintaiapp
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/user/Desktop/個人開発関係/C\#業務アプリ作成関係/Kintaiapp/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/user/Desktop/個人開発関係/C\#業務アプリ作成関係/Kintaiapp/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/user/Desktop/個人開発関係/C\#業務アプリ作成関係/Kintaiapp/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

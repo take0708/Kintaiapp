@@ -15,5 +15,7 @@ namespace Kintaiapp.Data
         }
 
         public DbSet<Kintaiapp.Models.Kintai> Kintai { get; set; } = default!;
+
+        public DbSet<Kintaiapp.Models.Account> Account { get; set; } = default!;
     }
 }

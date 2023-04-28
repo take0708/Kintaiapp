@@ -13,7 +13,4 @@ public class Account
     [Required(ErrorMessage = "Please enter your password.")]
     [DataType(DataType.Password)]
     public string? Password { get; set; }
-
-    [NotNull]
-    public string ErrorMessage { get; set; } = "";
 }

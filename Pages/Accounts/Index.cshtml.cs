@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using Kintaapp.Models;
 using Kintaiapp.Data;
+using Kintaiapp.Models;
 
 namespace Kintaiapp.Pages.Accounts
 {
